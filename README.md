@@ -1,8 +1,16 @@
-# php
+#PHP Arrays Assignment
 
-This project includes the welcome message and the short personal introduction.
-After that I included a creativity quote. I heard it from somewhere once but do not know who it is from.
-The next php variables were defined for CodeStream Solutions' address. They are concatenated into a fromatted block and then displayed.
-I assigned two variables to numbers 15 and 4 and performed addition, subtraction, multiplication, division and modulus.
-I defined my name with a constant and displayed it.
-One of the sources I used to help me was w3schools.com under the PHP Examples. I looked into the one that said PHP Variables, 'Create different variables'.
+This PHP script models structured music data using associative and multidimensional arrays. It shows album ratings, artists and filters albums by release year using loops and conditionals. 
+
+Here is a list of what I did:
+-Associative array of 5 albums with ratings
+-Sorted album list displayed using foreach
+-Multidimensional array of 4 artists with albums and years
+-Loops to display full library and The Who’s discography
+-Conditional filtering for albums released after 1970
+-All output stored in "$pageContent" and echoed to browser
+
+I did copy and pasted my code to Copilot to see if I had any errors.
+Copilot was able to catch some typos I had made. It also corrected a mistake I had throughout my entire code. It noticed that I was overwriting $pageContent instead of appending to it. 
+So instead of having "$pageContent =", I was supposed to have 
+"$pageContent .=".
