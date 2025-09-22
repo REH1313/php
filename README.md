@@ -1,4 +1,4 @@
-#PHP Arrays Assignment
+# PHP Arrays Assignment
 
 This PHP script models structured music data using associative and multidimensional arrays. It shows album ratings, artists and filters albums by release year using loops and conditionals. 
 
