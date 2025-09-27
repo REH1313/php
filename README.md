@@ -14,3 +14,5 @@ I did copy and pasted my code to Copilot to see if I had any errors.
 Copilot was able to catch some typos I had made. It also corrected a mistake I had throughout my entire code. It noticed that I was overwriting $pageContent instead of appending to it. 
 So instead of having "$pageContent =", I was supposed to have 
 "$pageContent .=".
+
+I also ended up using AI to help me find the link to the website since I keep struggling with folders and files and where things belong.
