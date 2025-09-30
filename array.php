@@ -34,7 +34,7 @@
             ["title" => "Abbey Road", "year" => 1969]
         ],
         "Led Zeppelin" => [
-            ["title" => "Led Zepplin IV", "year" => 1971]
+            ["title" => "Led Zeppelin IV", "year" => 1971]
         ],
         "Rolling Stones" => [
             ["title" => "Let It Bleed", "year" => 1969],
