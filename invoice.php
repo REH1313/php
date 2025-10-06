@@ -14,8 +14,8 @@ ob_start();
             <option value="">Choose an album</option>
             <?php
             $albums = getAlbumList();
-            foreach ($albums as $album) {
-                echo "<option value=\"$album\">$album</option>";
+            foreach ($albums as $artist => $album) {
+                echo "<option value=\"$album\">$artist - $album</option>";
             }
             ?>
         </select>
@@ -31,6 +31,12 @@ ob_start();
             <option value="Digital">Digital</option>
         </select>
         <div class="invalid-feedback">Please choose a format.</div>
+    </div>
+    
+    <div class="mb-3">
+        <label for="quantity" class="form-label">Enter Quantity</label>
+        <input type="number" name="quantity" id="quantity" class="form-control" min="1" required>
+        <div class="invalid-feedback">Please enter a valid quantity.</div>
     </div>
     
     <button type="submit" class="btn btn-success">Generate Invoice</button>
