@@ -30,4 +30,5 @@ function getAlbumList() {
         'Opal Drift'       => 'Crystal Chimes',
         'Marrow Bloom'     => 'Botanica Requiem'
     ];
+}
 ?>
