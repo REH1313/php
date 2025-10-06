@@ -15,4 +15,19 @@ function priceCalc($format, $quantity) {
     }
     return $subtotal;
 }
+
+function getAlbumList() {
+    return [
+        'Aurora Vale'      => 'Ethereal Bloom',
+        'Solstice Drift'   => 'Mystic Echoes',
+        'Lunar Thread'     => 'Botanica Beats',
+        'Velvet Horizon'   => 'Velvet Horizon',
+        'Thistle & Thorn'  => 'Petal Pulse',
+        'Echo Fern'        => 'Verdant Reverb',
+        'Sable Root'       => 'Shadow Bloom',
+        'Iris Veil'        => 'Twilight Petals',
+        'Cedar Loom'       => 'Forest Frequencies',
+        'Opal Drift'       => 'Crystal Chimes',
+        'Marrow Bloom'     => 'Botanica Requiem'
+    ];
 ?>
