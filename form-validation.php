@@ -61,6 +61,7 @@ ob_start();
 <h1 class="mb-4">Favorite Things Form</h1>
 <?php if ($_SERVER["REQUEST_METHOD"] != "POST" || !empty($errors)): ?>
 <form method="post" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="needs-validation">
+
     <!-- Name -->
     <div class="mb-3">
         <label for="name" class="form-label">Name:</label>
@@ -70,7 +71,7 @@ ob_start();
         <?php endif; ?>
     </div>
 
-    <!-- Instrument -->
+    <!-- Email -->
     <div class="mb-3">
         <label for="email" class="form-label">Email:</label>
         <input type="text" name="email" id="email" class="form-control" value="<?= $email ?>">
@@ -79,7 +80,26 @@ ob_start();
         <?php endif; ?>
     </div>
 
-    <!-- Animals --> 
+    <!--Instrument-->
+    <div class="mb-3">
+        <label class="form-label">Favorite Instrument:</label><br>
+        <?php
+        $instrument = ["trumpet", "guitar", "harmonica", "piano", "drums"];
+        foreach ($instrument as $item):
+        ?>
+        <div class="form-check form-check-incline">
+            <input class="form-check-input" type="radio" name="instrument" value="<?= $item ?>"
+            <?= ($instrument === $item) ? "checked" : "" ?>>
+            <label class="form-check-label"><?= ucfirst($item) ?></label>
+        </div>
+        <?php endforeach; ?>
+        <?php if (isset($errors['instrument'])): ?>
+            <div class="alert alert-danger mt-2"><?= $errors['instrument'] ?></div>
+        <?php endif; ?>
+    </div>
+
+    
+    <!--Animals--> 
     <div class="mb-3">
         <label class="form-label">Favorite Animals (choose 2):</label><br>
         <?php
