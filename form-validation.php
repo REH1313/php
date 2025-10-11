@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $output .= "<h4>Welcome {$name}!</h4>";
         $output .= "<p>Your email is {$email}.</p>";
         $output .= "<p>Your favorite musical instrument is {$instrument}.</p>";
-        $output .= "<p>Your favorite animals are " . htmlspecialchars($animals[0]) . htmlspecialchars($animals[1]) . ".</p>";
+        $output .= "<p>Your favorite animals are " . htmlspecialchars($animals[0]) . "and" . htmlspecialchars($animals[1]) . ".</p>";
         $output .= "<p>Your favorite activity is {$activity}. </p>";
         $output .= "</div>";
         $output .= "<pre>" . print_r($_POST, true) . "</pre>";
@@ -98,7 +98,7 @@ ob_start();
         <?php endif; ?>
     </div>
 
-    
+
     <!--Animals--> 
     <div class="mb-3">
         <label class="form-label">Favorite Animals (choose 2):</label><br>
