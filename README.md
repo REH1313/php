@@ -1,13 +1,9 @@
-# Page Templating
+# Form Validation
 
-This assignment shows a multi-page PHP application that simulates a professional invoicing workflow for a fictional client. Its built using server-side includes, custom functions, and Bootstrap styling. 
-
-Here is a list of what I did:
--Created template.php with $pageTitle; bootstrap styling and HTML, output buffering with $pageContents
--Built functions.php; defined priceCalc()
--Created invoice.php with the albums, format and quantity fields
--Built handle-invoice.php and included fallback error messaging and navigation
--Included personalized albums based off an aesthetic
-
-I used Copilot to see if I had any errors once again.
-Copilot was able to catch some of the errors I had made in my code. Some of them being that I didnt include closing tags where I should have.
+This project allows users to enter their name, email, favorite instrument, favorite animals and favorite activity.
+When the submit button is clicked, the user is taken to a 'summary' page that outputs the information they entered.
+An array is shown at the bottom displaying the name, email, instrument, animals and activity based on the user input.
+The form is styled with Bootstrap, wrapped in template.php and print_r($_POST) appears after submission.
+htmlspecialchars(), trim(), and filter_var() are used correctly.
+Bootstrap alerts (alert alert-danger) show feedback.
+AI Copilot was used to check for typos in code and to expand on Bootstrap alert alert-danger.
