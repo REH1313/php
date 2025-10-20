@@ -1,9 +1,8 @@
-# Form Validation
+# PHP File Handling and Uploads
 
-This project allows users to enter their name, email, favorite instrument, favorite animals and favorite activity.
-When the submit button is clicked, the user is taken to a 'summary' page that outputs the information they entered.
-An array is shown at the bottom displaying the name, email, instrument, animals and activity based on the user input.
-The form is styled with Bootstrap, wrapped in template.php and print_r($_POST) appears after submission.
-htmlspecialchars(), trim(), and filter_var() are used correctly.
-Bootstrap alerts (alert alert-danger) show feedback.
-AI Copilot was used to check for typos in code and to expand on Bootstrap alert alert-danger.
+This form collects a users first name, last name, email, password and a profile image.
+The text inputs are sanitized using htmlspecialchars() and trimmed with trim()
+Adding preg_match() validates that all text fields are filled and that the email format is correct.
+Valid user data is appended to membership.txt.
+Uploaded files are validated to ensure the images do not exceed 300KB in size.
+AI Copilot was used to check for typos in code.
