@@ -1,10 +1,9 @@
+<?php
+// calendar.php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
-<?php
-// calendar.php
 include 'template.php';
 
 // Default to current date/time unless form submitted
