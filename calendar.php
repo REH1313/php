@@ -90,3 +90,6 @@ if ($daysUntilHoliday === 0) {
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
 </div>
+
+$pageContents = ob_get_clean();
+include 'template.php';
