@@ -24,29 +24,29 @@ $timeString = date('g:i A', $timestamp);
 $hour = (int)date('H', $timestamp);
 if ($hour >= 5 && $hour < 12) {
     $greeting = 'Good morning!';
-    $timeImage = 'morning.jpg';
+    $timeImage = 'images/morning.jpg';
 } elseif ($hour >= 12 && $hour < 17) {
     $greeting = 'Good afternoon!';
-    $timeImage = 'afternoon.jpg';
+    $timeImage = 'images/afternoon.jpg';
 } elseif ($hour >= 17 && $hour < 21) {
     $greeting = 'Good evening!';
-    $timeImage = 'evening.jpg';
+    $timeImage = 'images/evening.jpg';
 } else {
     $greeting = 'Good night!';
-    $timeImage = 'night.jpg';
+    $timeImage = 'images/night.jpg';
 }
 
 // Semester logic (Dallas College)
 $month = (int)date('n', $timestamp);
 if ($month >= 1 && $month <= 4) {
     $semester = 'Spring Semester';
-    $seasonImage = 'spring.jpg';
+    $seasonImage = 'images/spring.jpg';
 } elseif ($month >= 5 && $month <= 8) {
     $semester = 'Summer Semester';
-    $seasonImage = 'summer.jpg';
+    $seasonImage = 'images/summer.jpg';
 } else {
     $semester = 'Fall Semester';
-    $seasonImage = 'fall.jpg';
+    $seasonImage = 'images/fall.jpg';
 }
 
 //Holiday countdown (example: December 25th)
