@@ -1,11 +1,5 @@
 <?php
 // calendar.php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-ob_start();
-
 include 'template.php';
 
 // Default to current date/time unless form submitted
@@ -92,8 +86,3 @@ if ($daysUntilHoliday === 0) {
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
 </div>
-
-<?php
-$pageContents = ob_get_clean();
-include 'template.php';
-?>
